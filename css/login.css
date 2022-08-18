@@ -1,0 +1,21 @@
+body{
+    background-color: #F8F9FA;
+}
+form>img{
+width: 20%;
+}
+form{
+    margin-top: 5%;
+    text-align: center;
+}
+form>h3{
+    font-size: 100%;
+}
+form>h1{
+    font-size: 150%;
+}
+form>button{
+    background-color: #0D6EFD;
+    border-color: #0D6EFD;
+    color: white;
+}

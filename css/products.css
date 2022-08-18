@@ -1,0 +1,9 @@
+div.titulo-listado{
+    text-align: center;
+}
+
+div.lista{
+    margin-left: 10%;
+    margin-right: 10%;
+    border: ridge;
+}
