@@ -7,3 +7,12 @@ div.lista{
     margin-right: 10%;
     border: ridge;
 }
+
+div.row{
+    margin: 5px;
+}
+
+div.lista :hover{
+    background-color:rgb(120, 197, 197);
+    margin: 0%;
+}
