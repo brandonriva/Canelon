@@ -13,6 +13,11 @@ nav a {
   text-decoration: none;
 }
 
+nav a#usuario_logeado{
+  text-decoration: none;
+  color: gray;
+}
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -187,4 +192,37 @@ a.custom-card:hover {
 
 .checked {
   color: orange;
+}
+
+/filtros
+
+div#btn-filtro button{
+  width: 50px;
+  height: 40px;
+  margin-bottom: 1%;
+}
+
+div#btn-filtro img{
+  width: 15px;
+}
+
+div#filtro {
+  text-align: right;
+  margin-right: 10%;
+}
+
+div#btn-filtro button{
+
+  margin-bottom: 1%;
+}
+
+div#btn-filtro :hover{
+  background-color: gray;
+}
+
+button#limpiar{
+  color: #0087F7;
+  border: none;
+  background-color:white;
+  text-decoration: underline;
 }

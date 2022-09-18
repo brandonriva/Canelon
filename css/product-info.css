@@ -1,0 +1,19 @@
+div#aqui img{
+    width: 20%;
+}
+
+div#aqui h4{
+    font-weight: 600;
+}
+
+div#comentarios{
+    border: ridge;
+}
+
+.checked {
+    color: orange;
+  }
+
+form button{
+    background-color: #0D6EFD;
+}
