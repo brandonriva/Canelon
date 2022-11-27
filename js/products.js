@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("precio1").value= "";
         document.getElementById("precio2").value= "";
     });
-  });
+});
 
 
     //guardar id del producto y redireccionar a product-info.html

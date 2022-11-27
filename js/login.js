@@ -1,11 +1,14 @@
-function verificar() {
-    let mail = document.getElementById('loginMail').value;
-    let password = document.getElementById('loginPassword').value;
-    if (mail.length>0 && password.length>0) {
-        location.replace("portada.html");
-        localStorage.setItem("usuario", mail);
+let mail = document.getElementById('loginMail');
+let password = document.getElementById('loginPassword');
+let btn_login = document.getElementById('btn-login');
+
+function validate(mail, password){
+    if(mail.value === "" || password.value === ""){
+        alert('por favor complete todos los campos')
     }else{
-        alert('por favor complete todos los campos');
+        localStorage.setItem("usuario", mail.value);
+        location.replace("index.html");
     }
 }
 
+btn_login.addEventListener("click", ()=>{validate(mail, password)})

@@ -32,7 +32,16 @@
             <a class="nav-link" href="sell.html">Vender</a>
           </li>
           <li class="nav-item">
-          </li>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="" id="usuario_logeado"></a>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="cart.html">Mi carrito</a></li>
+                <li><a class="dropdown-item" href="my-profile.html">Mi perfil</a></li>
+                <li><a class="dropdown-item" href="index.html" onclick="close_sesion()">Cerrar sesion</a></li>
+              </ul>
+            </div>
         </ul>
       </div>
     </div>
@@ -53,9 +62,14 @@
         <p>Tu opinión:</p>
         <input type="text" name="opinión" id="opinion" style="width: 40%; height: 80px;"><br><br>
         <p>Tu puntuación</p>
-        <input type="number" name=""puntuación id="puntuacion" max="5"><br><br>
-        <button type="submit" id="btn-enviar">Enviar</button>
+        <input type="number" name="puntuación" id="puntuacion" max="5"><br><br>
+        <button type="button" id="btn-send">Enviar</button>
       </form>
+    </div>
+    <div class="container" id="productos_relacionados">
+      <hr>
+      <h2>Productos Relacionados</h2>
+
     </div>
   </main>
   <footer class="text-muted">

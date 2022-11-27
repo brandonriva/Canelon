@@ -45,16 +45,70 @@
             <a class="nav-link" href="sell.html">Vender</a>
           </li>
           <li class="nav-item">
-          </li>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="" id="usuario_logeado"></a>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="cart.html">Mi carrito</a></li>
+                <li><a class="dropdown-item" href="my-profile.html">Mi perfil</a></li>
+                <li><a class="dropdown-item" href="index.html" onclick="close_sesion()">Cerrar sesion</a></li>
+              </ul>
+            </div>
         </ul>
       </div>
     </div>
   </nav>
   <main>
     <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
-      </div>
+      <br>
+    <h2>Perfil</h2>
+    <hr>
+
+    <div class="row">
+    <div class="col-sm-6">
+    <label for="firstName" class="form-label" >Primer nombre*</label>
+      <input type="text" class="form-control" id="firstName" required> 
+    </div>
+
+    <div class="col-sm-6">
+      <label for="secondName" class="form-label">Segundo nombre</label>
+      <input type="text" class="form-control" id="secondName"> 
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <label for="fisrtLastname" class="form-label">Primer apellido*</label>
+      <input type="text" class="form-control" id="fisrtLastname" required> 
+    </div>
+
+    <div class="col-sm-6">
+      <label for="secondLastname" class="form-label">Segundo apellido</label>
+      <input type="text" class="form-control" id="secondLastname"> 
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <label for="e_mail" class="form-label">E-mail*</label>
+      <input type="mail" class="form-control" id="e_mail" required> 
+    </div>
+
+    <div class="col-sm-6">
+      <label for="numberContact" class="form-label">Teléfono de contacto</label>
+      <input type="number" class="form-control" id="numberContact"> 
+    </div>
+    </div>
+    </div>
+    
+    <div class="container">
+      <br>
+      <br>
+      <hr>
+      <button class="btn btn-primary" type="button" id="btn_profile" onclick="validation(firstName, secondLastname, secondName, fisrtLastname, e_mail, numberContact)">Guardar cambios</button>
+  </div>
+
     </div>
   </main>
   <footer class="text-muted">
@@ -70,6 +124,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/init.js"></script>
   <script src="js/my-profile.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

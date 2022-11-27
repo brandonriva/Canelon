@@ -39,3 +39,24 @@ let getJSONData = function(url){
         return result;
     });
 }
+
+//obtener el id del usuario y mostrarlo
+function user(){
+  let usuario = localStorage.getItem('usuario');
+  if (usuario){
+  document.getElementById("usuario_logeado").innerHTML = usuario;
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+  user();
+})
+
+if(localStorage.getItem('usuario') === null){
+  window.location.href = 'login.html';
+}
+
+function close_sesion(){
+  localStorage.removeItem('usuario');
+  localStorage.clear();
+}
